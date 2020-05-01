@@ -1,0 +1,9 @@
+python 3.7
+
+cuda 10.1 - cudnn 7.6.4
+tensorflow 2.1
+opencv-python
+absl-py
+matplotlib
+scikit-learn
+numpy

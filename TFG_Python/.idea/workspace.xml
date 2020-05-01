@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd25686d-ab34-4269-a6bd-67fb12e134de" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y4An3GPqlWZKgVPVgGdmDhY059" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\TFG\TFG_Python\myTools" />
+      <recent name="D:\TFG\TFG_Python" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TFG\TFG_Python\myTools" />
+      <recent name="E:\TFG\TFG_Python" />
+      <recent name="D:\TFG\TFG_Python\data" />
+      <recent name="D:\TFG\TFG_Python" />
+      <recent name="D:\TFG\TFG_Python\tools" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.detect_video_wo_gl_r">
+    <configuration name="convert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="desviacionmedia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desviacionmedia.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="detect_video_wo_gl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect_video_wo_gl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="detect_video_wo_gl_r" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect_video_wo_gl_r.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_orientation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myTools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myTools/test_orientation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.detect_video_wo_gl_r" />
+        <item itemvalue="Python.desviacionmedia" />
+        <item itemvalue="Python.detect_video_wo_gl" />
+        <item itemvalue="Python.convert" />
+        <item itemvalue="Python.test_orientation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd25686d-ab34-4269-a6bd-67fb12e134de" name="Default Changelist" comment="" />
+      <created>1582191655198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582191655198</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3590" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586851270404">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3590" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1586851270404" />
+    <state x="3570" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585477595593">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3570" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1585477595593" />
+    <state width="619" height="466" key="DebuggerActiveHint" timestamp="1584630849816">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="619" height="466" key="DebuggerActiveHint/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1584630849816" />
+    <state x="1059" y="454" key="FileChooserDialogImpl" timestamp="1588319903862">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1059" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588319903862" />
+    <state x="3619" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1586853712232" />
+    <state width="2539" height="394" key="GridCell.Tab.0.bottom" timestamp="1588327902071">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="394" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587990905079" />
+    <state width="2539" height="394" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
+    <state width="2539" height="394" key="GridCell.Tab.0.center" timestamp="1588327902071">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="394" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587990905079" />
+    <state width="2539" height="394" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
+    <state width="2539" height="394" key="GridCell.Tab.0.left" timestamp="1588327902071">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="394" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587990905078" />
+    <state width="2539" height="394" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
+    <state width="2539" height="394" key="GridCell.Tab.0.right" timestamp="1588327902071">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="394" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587990905079" />
+    <state width="2539" height="394" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
+    <state width="2539" height="647" key="GridCell.Tab.1.bottom" timestamp="1587900256630">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="647" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587900256630" />
+    <state width="2539" height="647" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587894374720" />
+    <state width="2539" height="647" key="GridCell.Tab.1.center" timestamp="1587900256630">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="647" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587900256630" />
+    <state width="2539" height="647" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587894374720" />
+    <state width="2539" height="647" key="GridCell.Tab.1.left" timestamp="1587900256630">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="647" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587900256630" />
+    <state width="2539" height="647" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587894374720" />
+    <state width="2539" height="647" key="GridCell.Tab.1.right" timestamp="1587900256630">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="647" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587900256630" />
+    <state width="2539" height="647" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587894374720" />
+    <state x="3341" y="342" key="SettingsEditor" timestamp="1586853732058">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3341" y="342" key="SettingsEditor/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1586853732058" />
+    <state x="291" y="0" width="1913" height="1388" key="dock-window-1" timestamp="1587462271917">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2560" y="0" width="1921" height="1388" key="dock-window-1/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1584959419572" />
+    <state x="291" y="0" width="1913" height="1388" key="dock-window-1/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587462271917" />
+    <state x="2775" y="-14" width="1913" height="1388" key="dock-window-2" timestamp="1587484224700">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2775" y="-14" width="1913" height="1388" key="dock-window-2/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587484224700" />
+    <state x="18" y="78" width="2244" height="870" key="dock-window-2/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1585410177756" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detect_video_wo_r.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detect_video_wo_gl.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detect_video_wo_gl_r.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
