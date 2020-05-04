@@ -13,6 +13,9 @@ internal class Server : MonoBehaviour
      */
     private static int _port = 12345;
     public int port = 12345;
+    public bool is_test = false;
+    private static int _address = 2;
+    public int address = 2;
 
     private static ServerUser _serverUser;
     public ServerUser serverUser;
@@ -24,9 +27,25 @@ internal class Server : MonoBehaviour
     private void Start()
     {
         _port = port;
-        _serverUser = serverUser;
-        BuildServer();
-        StartServer();
+        _address = address;
+        if (is_test)
+            Test();
+        else
+        {
+            _serverUser = serverUser;
+            BuildServer();
+            StartServer();
+        }
+    }
+
+    public void Test()
+    {
+        /*
+         * Muestra por consola la ip y puerto empleadas
+         */
+        IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
+        IPAddress ipAddr = ipHost.AddressList[_address];
+        print("IP: " + ipAddr + ", PORT: " + _port);
     }
 
     public static void BuildServer()
@@ -35,7 +54,7 @@ internal class Server : MonoBehaviour
          * Levanta el servidor en un puerto específico de esta máquina
          */
         IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
-        IPAddress ipAddr = ipHost.AddressList[2];
+        IPAddress ipAddr = ipHost.AddressList[_address];
         IPEndPoint localEndPoint = new IPEndPoint(ipAddr, _port);
         Socket listener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
@@ -63,18 +82,19 @@ internal class Server : MonoBehaviour
             Shutdown(clientSocket);
         else
         {
-            _serverUser.Warning(data);
+            _serverUser.Receive_msg(data);
         }
     }
 
-    private static void SendMsg(Socket clientSocket)
+    public void SendMsg(Socket clientSocket)
     {
         /*
-         * Devuelve un mensaje de control al cliente
+         * Devuelve un mensaje al cliente
          */
         if (!isShutdown)
         {
-            byte[] message = Encoding.ASCII.GetBytes("OK 200");
+            string msg = _serverUser.Send_msg();
+            byte[] message = Encoding.ASCII.GetBytes(msg);
             clientSocket.Send(message);
         }
     }
@@ -117,5 +137,9 @@ internal class Server : MonoBehaviour
 
 public abstract class ServerUser : MonoBehaviour
 {
-    public abstract void Warning(string msg);
+    /*
+     * Clase encargada de requerir los métodos empleados por el servidor
+     */
+    public abstract void Receive_msg(string msg);
+    public abstract string Send_msg();
 }

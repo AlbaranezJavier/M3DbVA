@@ -22,6 +22,7 @@ public class Factory_floor : ServerUser
     private List<GameObject> objectsList = new List<GameObject>();
     private CultureInfo ci = CultureInfo.InvariantCulture;
     private float fdH, fdV;
+    private float maxGrayScale = 255f;
 
     // Parámetros del mensaje
     private float px, py, depth, pw, ph, rot;
@@ -84,7 +85,7 @@ public class Factory_floor : ServerUser
                     rot = float.Parse(obj_params[6], ci);
 
                     // Distancia
-                    dist = parameters.minDistance + ((parameters.maxGrayScale - depth) * parameters.maxDistance) / parameters.maxGrayScale;
+                    dist = parameters.minDistance + ((maxGrayScale - depth) * parameters.maxDistance) / maxGrayScale;
                     // Escala
                     x = pw / fdH * dist;
                     y = ph / fdV * dist;

@@ -1,6 +1,6 @@
 python 3.7
 
-cuda 10.1 - cudnn 7.6.4
+cuda 10.1 - cudnn 7.6.5
 tensorflow 2.1
 opencv-python
 absl-py

@@ -4,11 +4,11 @@ esta comunicación en la misma máquina.
 '''
 import socket
 
-def bind2server():
+def bind2server(PORT=12345):
     '''
     Establece una conexión con el servidor, el cual, está escuchando en el puerto 12345 de esta máquina.
     '''
-    HOST, PORT = socket.gethostname(), 12345
+    HOST = socket.gethostname()
     HOST = socket.gethostbyname(HOST)
     print(f'IP: {HOST}, Port: {PORT}')
 

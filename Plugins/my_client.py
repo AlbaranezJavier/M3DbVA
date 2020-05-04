@@ -4,11 +4,11 @@ esta comunicación en la misma máquina.
 '''
 import socket
 
-def bind2server():
+def bind2server(PORT=12345):
     '''
     Establece una conexión con el servidor, el cual, está escuchando en el puerto 12345 de esta máquina.
     '''
-    HOST, PORT = socket.gethostname(), 12345
+    HOST = socket.gethostname()
     HOST = socket.gethostbyname(HOST)
     print(f'IP: {HOST}, Port: {PORT}')
 
@@ -27,10 +27,10 @@ def print_msg(data, received):
     print("Sent:     {}".format(data))
     print("Received: {}".format(received))
 
-# from my_client import bind2server, send_msg, receive_msg, print_msg
 '''
-Script, prueba de comunicación.
-'''
+from my_client import bind2server, send_msg, receive_msg, print_msg
+
+# Script, prueba de comunicación.
 if __name__ == '__main__':
     print("Ejecutando prueba de client")
     mySocket = bind2server()
@@ -46,4 +46,4 @@ if __name__ == '__main__':
         print_msg(data, serverMsg)
     finally:
         mySocket.close()
-
+'''

@@ -13,7 +13,6 @@ public class PublicVariables
     {
         public float minDistance = 0.01f;
         public float maxDistance = 20f;
-        public float maxGrayScale = 255f;
         public float fieldOfViewVertical = 54f;
         public float fieldOfViewHorizontal = 85f;
         public float[] resolution = {1280f, 720f};

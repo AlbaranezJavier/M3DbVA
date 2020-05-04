@@ -23,7 +23,7 @@ flags.DEFINE_string('weights', './checkpoints/yolov3-320.tf',
 flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 flags.DEFINE_integer('size', 416, 'resize images to')
 flags.DEFINE_integer('fps_record', 30, 'fps it was recorded')
-flags.DEFINE_string('image', './data/prueba/', 'path to input image')
+flags.DEFINE_string('image', './data/exp1/', 'path to input image')
 flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
 flags.DEFINE_integer('x_resolution', 1280, 'image resolution x')
 flags.DEFINE_integer('y_resolution', 720, 'image resolution y')

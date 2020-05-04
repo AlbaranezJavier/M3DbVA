@@ -15,9 +15,9 @@ flags.DEFINE_string('weights', './checkpoints/yolov3-320.tf',
                     'path to weights file')
 flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 flags.DEFINE_integer('size', 416, 'resize images to')
-flags.DEFINE_string('image', './data/exp2/RGB/1260.jpg', 'path to input image')
+flags.DEFINE_string('image', './data/exp1/RGB/700.jpg', 'path to input image')
 flags.DEFINE_string('tfrecord', None, 'tfrecord instead of image')
-flags.DEFINE_string('output', './data/clima1260RGB.jpg', 'path to output image')
+flags.DEFINE_string('output', './data/myOutput.jpg', 'path to output image')
 flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
 
 

@@ -1,2 +1,2 @@
-model_checkpoint_path: "yolov3-608(2).tf"
-all_model_checkpoint_paths: "yolov3-608(2).tf"
+model_checkpoint_path: "yolov3-320.tf"
+all_model_checkpoint_paths: "yolov3-320.tf"
