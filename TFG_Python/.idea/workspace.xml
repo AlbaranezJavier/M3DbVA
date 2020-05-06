@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd25686d-ab34-4269-a6bd-67fb12e134de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Assets/Scenes/server_floor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Assets/Scenes/server_floor.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Assets/Scripts/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Assets/Scripts/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/StateCache/Hierarchy/8a211a-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/StateCache/Hierarchy/8a211a-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/metadata/9e/9e8b5ef47c59d174681ba2006ac00f80" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/metadata/9e/9e8b5ef47c59d174681ba2006ac00f80" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
