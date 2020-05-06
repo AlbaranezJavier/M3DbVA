@@ -54,7 +54,7 @@ Tabla de rendimiento de los algoritmos empleados (medidas en segundos).
 | **6** | 0.201137 | 0.005176 | 0.011905 | 0.000116 | 0.215897 |
 | **Media** | **0.198748** | **0.004852** | **0.004673** | **0.000076** | **0.208468** |
 
-## :bookmark_tabs:Guías:
+## :bookmark_tabs:Guías
  - [Uso genérico del sistema de comunicación](docs/Guia_del_sistema_de_comunicacion.md)
  - [Generación de entornos](docs/Guia_para_la_generacion_de_entornos.md)
 
