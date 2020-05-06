@@ -29,3 +29,5 @@ Por último, al pulsar el botón de play de Unity, se levanta el servidor y qued
 	<img src="Images/communicationresults.JPG" align="middle" width="2000"/>
 	<figcaption>Fig. 3 - Resultados, guía del sistema de comunicación.</figcaption>
 </figure>
+
+[Volver a la página principal](../README.md)
