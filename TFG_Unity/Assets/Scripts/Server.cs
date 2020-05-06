@@ -13,7 +13,8 @@ internal class Server : MonoBehaviour
      */
     private static int _port = 12345;
     public int port = 12345;
-
+    public string ip_address = "192.168.1.1";
+    private static string _ip_address = "192.168.1.1";
     private static ServerUser _serverUser;
     public ServerUser serverUser;
 
@@ -24,6 +25,7 @@ internal class Server : MonoBehaviour
     private void Start()
     {
         _port = port;
+        _ip_address = ip_address;
         _serverUser = serverUser;
         BuildServer();
         StartServer();
@@ -35,7 +37,7 @@ internal class Server : MonoBehaviour
          * Levanta el servidor en un puerto específico de esta máquina
          */
         IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
-        IPAddress ipAddr = ipHost.AddressList[2];
+        IPAddress ipAddr = IPAddress.Parse(_ip_address);
         IPEndPoint localEndPoint = new IPEndPoint(ipAddr, _port);
         Socket listener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 

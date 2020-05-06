@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd25686d-ab34-4269-a6bd-67fb12e134de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugins/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Plugins/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plugins/my_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Plugins/my_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/myOutput.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/myOutput.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detect_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detect_video_wo_gl.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect_video_wo_gl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detect_video_wo_gl_r.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect_video_wo_gl_r.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detect_video_wo_r.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect_video_wo_r.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myTools/my_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/myTools/my_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Assets/Scenes/server_floor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Assets/Scenes/server_floor.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Assets/Scripts/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Assets/Scripts/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/StateCache/Hierarchy/8a211a-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/StateCache/Hierarchy/8a211a-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFG_Unity/Library/metadata/9e/9e8b5ef47c59d174681ba2006ac00f80" beforeDir="false" afterPath="$PROJECT_DIR$/../TFG_Unity/Library/metadata/9e/9e8b5ef47c59d174681ba2006ac00f80" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="E:/TFG/TFG_Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -58,7 +51,7 @@
       <recent name="D:\TFG\TFG_Python\tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.detect">
+  <component name="RunManager" selected="Python.detect_video">
     <configuration name="convert" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TFG_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,27 +73,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="desviacionmedia" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TFG_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/desviacionmedia.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="detect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TFG_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,6 +86,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="detect_video" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect_video.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.detect_video" />
         <item itemvalue="Python.detect" />
         <item itemvalue="Python.convert" />
         <item itemvalue="Python.test_gpu" />
         <item itemvalue="Python.detect_video_wo_gl_r" />
-        <item itemvalue="Python.desviacionmedia" />
       </list>
     </recent_temporary>
   </component>
@@ -212,30 +205,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="619" height="466" key="DebuggerActiveHint/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1584630849816" />
-    <state x="1059" y="454" key="FileChooserDialogImpl" timestamp="1588586303423">
+    <state x="1059" y="454" key="FileChooserDialogImpl" timestamp="1588693190974">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1059" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588586303423" />
+    <state x="1059" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588693190974" />
     <state x="3619" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1586853712232" />
-    <state width="1256" height="391" key="GridCell.Tab.0.bottom" timestamp="1588592080576">
+    <state width="1256" height="391" key="GridCell.Tab.0.bottom" timestamp="1588692949890">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1256" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588592080576" />
+    <state width="1256" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588692949890" />
     <state width="2539" height="394" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
-    <state width="1256" height="391" key="GridCell.Tab.0.center" timestamp="1588592080576">
+    <state width="1256" height="391" key="GridCell.Tab.0.center" timestamp="1588692949890">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1256" height="391" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588592080576" />
+    <state width="1256" height="391" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588692949890" />
     <state width="2539" height="394" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
-    <state width="1256" height="391" key="GridCell.Tab.0.left" timestamp="1588592080576">
+    <state width="1256" height="391" key="GridCell.Tab.0.left" timestamp="1588692949890">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1256" height="391" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588592080576" />
+    <state width="1256" height="391" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588692949890" />
     <state width="2539" height="394" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
-    <state width="1256" height="391" key="GridCell.Tab.0.right" timestamp="1588592080576">
+    <state width="1256" height="391" key="GridCell.Tab.0.right" timestamp="1588692949890">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1256" height="391" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588592080576" />
+    <state width="1256" height="391" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588692949890" />
     <state width="2539" height="394" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1588327902071" />
     <state width="2539" height="647" key="GridCell.Tab.1.bottom" timestamp="1587900256630">
       <screen x="0" y="0" width="2560" height="1400" />

@@ -20812,7 +20812,6 @@ MonoBehaviour:
   parameters:
     minDistance: 0.001
     maxDistance: 20
-    maxGrayScale: 255
     fieldOfViewVertical: 54
     fieldOfViewHorizontal: 85
     resolution:
@@ -27579,6 +27578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   port: 12345
+  ip_address: 192.168.1.93
   serverUser: {fileID: 1209081658}
 --- !u!4 &1549365779
 Transform:
