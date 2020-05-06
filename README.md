@@ -1,6 +1,10 @@
 # Modelado 3D basado en Visión Artificial
 Herramienta destinada a la generación de entornos 3D simplificados a partir de imágenes reales, en tiempo real y manteniendo los entornos más extendidos en los ámbitos de inteligencia artificial y generación de gráficos 3D. Además, se proporcionan los complementos necesarios para establecer una comunicación genérica entre Python y Unity.
 
+<p align="center">
+  <img src="docs/Images/githubgif.gif" alt="example input output gif" width="600" />
+</p>
+
 ## :bulb:Motivación
 Se trata de mi proyecto de fin de carrera en Desarrollo y Diseño de Videojuegos en la Univerdidad Rey Juan Carlos, que junto mi tutor de TFG, vimos interesante para el estudio de los problemas surgidos a la hora de plasmar un entorno real en su expersión virtual 3D y su aplicación en sistemas de aprendizaje automático, en especial algoritmos de aprendizaje por refuerzo.
 
@@ -54,6 +58,6 @@ Tabla de rendimiento de los algoritmos empleados (medidas en segundos).
  - [Uso genérico del sistema de comunicación](docs/Guia_del_sistema_de_comunicacion.md)
  - [Generación de entornos](Guia_para_la_generación_de_entornos.md)
 
-## Referencias
+## :raised_hands:Referencias
  - [Implementación de YoloV3 con TensorFlow 2, autor Zihao Zhang (zzh8829)](https://github.com/zzh8829/yolov3-tf2)
 
