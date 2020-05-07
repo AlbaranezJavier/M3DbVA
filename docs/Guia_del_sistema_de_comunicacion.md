@@ -12,7 +12,7 @@ Para establecer el cliente se crea un proyecto con Pycharm, pegando en su interi
 El método "bind2server" se encarga de realizar la petición de conexión con el servidor a la dirección IP del mismo ordenador y el puerto especificado, que por defecto es "12345". Mientras que "send\_msg" y "receive\_msg" se encargan de enviar y recibir los mensajes.
 
 ## Servidor:
-Para establecer el servidor se crea un nuevo proyecto en Unity, arrastrando en la carpeta de "Assets" los ficheros "Plugins/Server.cs" y "Plugins/ServerTest.cs". El primero, contie-ne el código encargado de establecer y manejar el servidor. Mientras que el segundo, es un código de ejemplo. Después, hay que generar dos "GameObjects" vacíos, uno se renombra como Servidor y se arrastra a su interior "Server.cs" y en el otro, se arrastra "ServerTest.cs" y se renombra como Test (ver figura 2).
+Para establecer el servidor se crea un nuevo proyecto en Unity, arrastrando en la carpeta de "Assets" los ficheros "Plugins/Server.cs" y "Plugins/ServerTest.cs". El primero, contiene el código encargado de establecer y manejar el servidor. Mientras que el segundo, es un código de ejemplo. Después, hay que generar dos "GameObjects" vacíos, uno se renombra como Servidor y se arrastra a su interior "Server.cs" y en el otro, se arrastra "ServerTest.cs" y se renombra como Test (ver figura 2).
 
 <figure>
 	<img src="Images/servidortest.JPG" align="middle" width="2000"/>
