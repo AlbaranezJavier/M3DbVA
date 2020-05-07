@@ -4,7 +4,7 @@ En esta guía se enumeran los pasos necesarios para hacer uso de la herramienta 
 1. En el entorno virtual de Python (versión 3.7) es necesario tener instalados los siguientes módulos: Tensorflow 2.1, opencv-python, absl-py, matplotlib, scikit-learn y numpy.
 2. Abrir el proyecto llamado TFG_Python y configurar el intérprete con el entorno virtual anterior.
 3. Descargar los pesos de la red neuronal preentrenada de [Yolo](https://pjreddie.com/darknet/yolo/), llamada YOLOv3-320 (YOLOv3-tiny es opcional), en Repositorio/TFG_Python/data, renombrando el archivo a yolov3-320.
-4. En el directorio Repositorio/TFB_Python/ se ejecuta el fichero "convert.py", encar-gado de traducir los pesos al formato que el programa necesita y guardarlos en la carpeta llamada "checkpoints".
+4. En el directorio Repositorio/TFG_Python/ se ejecuta el fichero "convert.py", encargado de traducir los pesos al formato que el programa necesita y guardarlos en la carpeta llamada "checkpoints".
 5. Después, se debe instalar la versión 2019.2.17f1 con Unity Hub o desde el [archivo](https://unity3d.com/get-unity/download/archive) para poder abrir el proyecto de Unity que se encuentra en Repositorio/TFG_Unity.
 6. Se puede elegir entre dos versiones ("server y server_floor", ambos en la carpeta "Scenes" de "Assets"), siendo "server_floor" una modificación de "server" que genera un suelo sobre el que se ubican los modelos.
 7. Comprobar la dirección IPv4 del equipo (ejecutar en la consola del sistema el comando "ipconfig" en Widnows o "ifconfig" en Linux/Max) y copiar en el apartado "Ip_address" del servidor.
