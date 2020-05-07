@@ -1,17 +1,17 @@
 # Modelado 3D basado en Visión Artificial
-Herramienta destinada a la generación de entornos 3D simplificados a partir de imágenes reales, en tiempo real y manteniendo los entornos más extendidos en los ámbitos de inteligencia artificial y generación de gráficos 3D. Además, se proporcionan los complementos necesarios para establecer una comunicación genérica entre Python y Unity.
+Herramienta destinada a la generación de entornos 3D simplificados a partir de imágenes reales, con un procesamiento en tiempo real y manteniendo los entornos más extendidos en los ámbitos de inteligencia artificial y generación de gráficos 3D. Además, se proporcionan los complementos necesarios para establecer una comunicación genérica entre Python y Unity.
 
 <p align="center">
   <img src="docs/Images/githubgif.gif" alt="example input output gif" width="600" />
 </p>
 
 ## :bulb:Motivación
-Se trata de mi proyecto de fin de carrera en Desarrollo y Diseño de Videojuegos en la Univerdidad Rey Juan Carlos, que junto mi tutor de TFG, vimos interesante para el estudio de los problemas surgidos a la hora de plasmar un entorno real en su expersión virtual 3D y su aplicación en sistemas de aprendizaje automático, en especial algoritmos de aprendizaje por refuerzo.
+Se trata de mi proyecto de fin de carrera en Desarrollo y Diseño de Videojuegos en la Univerdidad Rey Juan Carlos, que junto a mi tutor de TFG, vimos interesante para el estudio de los problemas surgidos a la hora de plasmar un entorno real en su expresión virtual 3D y su aplicación en sistemas de aprendizaje automático, en especial algoritmos de aprendizaje por refuerzo.
 
 Este ha sido un gran primer paso personal a la hora de abordar problemas relacionados con la Inteligencia Artificial, sector en el que espero dirigir mi desarrollo académico. 
 
 ## :checkered_flag:Objetivo
-El presente proyecto debe dotar a los desarrolladores de una herramienta que les permita modelar un entorno real en una simplificación virtual de libre acceso y que sea sencillo adaptarlo a otro tipo de proyectos. Respetando además, los entornos de desarrollo habituales en los campos de inteligencia artificial y representación gráfica.
+El presente proyecto debe dotar a los desarrolladores de una herramienta que les permita modelar un entorno real en una simplificación virtual de libre acceso y que sea sencillo adaptarlo a otro tipo de proyectos, respetando además, los entornos de desarrollo habituales en los campos de inteligencia artificial y representación gráfica.
 
 ## :factory:Diseño
 Para conseguir el objetivo principal, se subdivide el problema en 3 partes:
@@ -54,7 +54,7 @@ Tabla de rendimiento de los algoritmos empleados (medidas en segundos).
 | **6** | 0.201137 | 0.005176 | 0.011905 | 0.000116 | 0.215897 |
 | **Media** | **0.198748** | **0.004852** | **0.004673** | **0.000076** | **0.208468** |
 
-## :bookmark_tabs:Guías:
+## :bookmark_tabs:Guías
  - [Uso genérico del sistema de comunicación](docs/Guia_del_sistema_de_comunicacion.md)
  - [Generación de entornos](docs/Guia_para_la_generacion_de_entornos.md)
 
