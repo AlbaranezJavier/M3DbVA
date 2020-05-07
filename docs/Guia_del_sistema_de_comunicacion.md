@@ -20,7 +20,7 @@ Para establecer el servidor se crea un nuevo proyecto en Unity, arrastrando en l
 	<figcaption>Fig. 2 - Servidor, guía del sistema de comunicación.</figcaption>
 </figure>
 
-En este punto, se comprueba la dirección IPv4 del equipo (ejecutando en la consola del sistema "ipconfig" si es Windows o "ifconfig" si es Linux/Mac) y se copia en el apartado "Ip_address" del Servidor y se mueve Test a su campo llamado "Server User".
+En este punto, se comprueba la dirección IPv4 del equipo (ejecutando en la consola del sistema "ipconfig" si es Windows o "ifconfig" si es Linux/Mac), se copia en el apartado "Ip_address" del Servidor y se mueve el GameObject Test al campo llamado "Server User".
 
 ## Test:
 Por último, al pulsar el botón de play de Unity, se levanta el servidor y queda a la espera de peticiones, momento en el que se puede ejecutar el cliente. Los resultados deben parecerse a la figura (ver figura 3).
