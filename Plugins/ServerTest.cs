@@ -10,6 +10,7 @@ public class ServerTest : ServerUser
 
     public void Start()
     {
+        print("Ejecutando prueba en el servidor");
     }
 
     public void Update()
@@ -21,21 +22,14 @@ public class ServerTest : ServerUser
                 clientQueue.Add("hi");
             else if (_msg.Equals("adios\n"))
                 clientQueue.Add("bye");
-            print("Client say: " + _msg);
         }
     }
 
-    /*
-     * Agrega un mensaje a la cola de recibidos
-     */
     public override void Receive_msg(string msg)
     {
         serverQueue.Enqueue(msg);
     }
 
-    /*
-     * Recoge un elemento de la cola de envios, pero si esta vacío espera
-     */ 
     public override string Send_msg()
     {
         return clientQueue.Take();
