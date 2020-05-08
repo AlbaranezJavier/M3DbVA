@@ -60,4 +60,5 @@ Tabla de rendimiento de los algoritmos empleados (medidas en segundos).
 
 ## :raised_hands:Referencias
  - [Implementación de YoloV3 con TensorFlow 2, autor Zihao Zhang (zzh8829)](https://github.com/zzh8829/yolov3-tf2)
+ - [Algoritmo RANSAC, de la librería de Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RANSACRegressor.html)
 
