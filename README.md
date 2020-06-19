@@ -1,4 +1,4 @@
-# [<img src="https://static.dwcdn.net/css/flag-icons/flags/4x3/es.svg" alt="es" height="30" align="right"/>](docs/ReadmeSpanish.md)
+# [<img src="https://static.dwcdn.net/css/flag-icons/flags/4x3/es.svg" alt="es" height="30" align="right"/>](docs/Guia_del_sistema_de_comunicacion.md)
 # 3D Modeling based on Artificial Vision
 A tool designed to generate simplified 3D environments from real images, with real-time processing and maintaining the most widespread environments in the fields of artificial intelligence and 3D graphics generation. It also provides the necessary complements to establish a generic communication between Python and Unity.
 
@@ -68,8 +68,8 @@ Tabla de rendimiento de los algoritmos empleados (medidas en segundos).
  - Tensorflow 2.1
 
 ## :bookmark_tabs:Guides
- - [Generic use of the communication system](docs/Communication_System_Guide.md)
- - [Generation of environments](docs/Environment_generation_guide.md)
+ - [Generic use of the communication system](docs/Guia_del_sistema_de_comunicacion.md)
+ - [Generation of environments](docs/Guia_para_la_generacion_de_entornos.md)
 
 ## :raised_hands:References
  - [Implementation of YoloV3 with TensorFlow 2, author Zihao Zhang (zzh8829)](https://github.com/zzh8829/yolov3-tf2)
