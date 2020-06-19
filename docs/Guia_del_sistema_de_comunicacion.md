@@ -30,4 +30,4 @@ Por último, al pulsar el botón de play de Unity, se levanta el servidor y qued
 	<figcaption>Fig. 3 - Resultados, guía del sistema de comunicación.</figcaption>
 </figure>
 
-[Volver a la página principal](docs/ReadmeSpanish.md)
+[Volver a la página principal](ReadmeSpanish.md)
