@@ -29,3 +29,5 @@ El entorno de Python dispone de los siguientes parámetros:
 - "image" especifica el lugar donde se encuentra la imagen o las imágenes a procesar, dependiendo de la versión del programa ejecutada.
 - "fps_record" son los fotogramas por segundo a los que se ha realizado el vídeo.
 - "x_resolution e y_resolution" es la resolución de las imágenes a procesar.
+
+[Volver a la página principal](docs/ReadmeSpanish.md)
