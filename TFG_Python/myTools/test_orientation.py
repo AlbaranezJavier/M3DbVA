@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from sklearn import linear_model
 
 '''
-Script, realiza una regresión linear con el algoritmo RANSAC. Representando los resultados obtenidos en una gráfica.
+Script, performs a linear regression with the RANSAC algorithm. Representing the results obtained in a graph.
 '''
 def get_orientation(X, y):
     ransac = linear_model.RANSACRegressor()

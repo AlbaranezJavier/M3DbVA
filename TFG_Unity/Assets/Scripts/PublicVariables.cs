@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * Parámetros necesarios para procesar el mensaje recibido por el cliente
+ * Parameters required to process the message received by the customer
  */
 
 public class PublicVariables

@@ -4,40 +4,40 @@ from sklearn import linear_model
 from math import degrees, atan
 
 '''
-Herramientas destinadas a estimar la orientación del objeto detectado
+Tools to estimate the orientation of the detected object
 '''
 def add_orientations(img, imgDepths, listObjects):
     '''
-    Establece una orientación estimada para los coches encontrados en la lista.
-    Recibe la lista de objetos (listObjects)
-    Recibe la imagen del mapa de profundidades (imgDepths)
+    It sets an estimated orientation for the cars found on the list.
+    Receives the list of objects (listObjects)
+    Get the image of the depth map (imgDepths)
     '''
     for object in listObjects:
         if object[0] == 'car':
             patternsX, patternsY = car_orientation(object[7][0], object[2], object[3], object[4], 20, imgDepths, img)
             if is_correct_for_ransac(patternsY):
-                # Se entrena al algoritmo RANSAC
+                # The RANSAC algorithm is trained
                 ransac = linear_model.RANSACRegressor()
                 ransac.fit(patternsX, patternsY)
-                # Se obtiene la recta predominante en la nube de puntos
+                # The predominant line in the point cloud is obtained
                 line_X = np.array([patternsX.min(), patternsX.max()])[:, np.newaxis]
                 line_y_ransac = ransac.predict(line_X)
-                # Se calcula el ángulo formado por la cámara y el objeto detectado
+                # The angle formed by the camera and the detected object is calculated
                 a = (line_y_ransac[1] - line_y_ransac[0]) * -1
                 b = patternsX.max() - patternsX.min()
                 object[9] = int(degrees(atan(a / b)))
 
 '''
-Patrones de puntos que se usarán para estimar la rotación del objeto de la clase detectada.
+Point patterns that will be used to estimate the rotation of the object of the detected class.
 '''
 def car_orientation(x1, centery, wx, hy, numPoints, imgDepths, img):
     '''
-    Recibe los parámetros necesarios por ubicar puntos dentro de los límites del objeto, el número de puntos a detectar
-    y la imagen del mapa de profundidad.
-    Devolviendo dos listas de numpy, una con los valores correspondientes al eje x (posiciones a lo ancho del objeto)
-    y otra con los correspondientes al eje y (profundidades del punto consultado).
-    Nota: cuando se refiere a "eje y" se hace referencia al eje de coordenadas representado en una gráfica 2D, pero las
-    profundidades corresponden al eje z en un sistema 3D.
+    It receives the necessary parameters for locating points within the limits of the object, the number of points to be detected
+    and the image of the depth map.
+    Returning two lists of numpy, one with the values corresponding to the x-axis (positions across the object)
+    and another with those corresponding to the y axis (depths of the point consulted).
+    Note: when referring to "y-axis", it refers to the coordinate axis shown in a 2D graphic, but the
+    depths correspond to the z axis in a 3D system.
     '''
     half = numPoints//2
     _centery = centery + len(imgDepths) // 2
@@ -61,8 +61,8 @@ def car_orientation(x1, centery, wx, hy, numPoints, imgDepths, img):
 
 def is_correct_for_ransac(patternsY):
     '''
-    Comprueba que este vector sea correcto para el algoritmo RANSAC.
-    Devuelve false si más de la mitad de los valores son iguales, true en caso contrario.
+    Check that this vector is correct for the RANSAC algorithm.
+    Returns false if more than half the values are equal, true if not.
     '''
     dict = {}
     max = 1

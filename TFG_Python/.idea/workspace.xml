@@ -23,7 +23,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -161,18 +160,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -244,15 +231,15 @@
     </state>
     <state width="2539" height="647" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1587900256630" />
     <state width="2539" height="647" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587894374720" />
-    <state x="781" y="342" key="SettingsEditor" timestamp="1588585867847">
+    <state x="781" y="342" key="SettingsEditor" timestamp="1592552061981">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1588585867847" />
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1592552061981" />
     <state x="3341" y="342" key="SettingsEditor/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1586853732058" />
-    <state x="291" y="0" width="1913" height="1388" key="dock-window-1" timestamp="1587462271917">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="2560" y="0" width="2195" height="1387" key="dock-window-1" timestamp="1592553020976">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
-    <state x="2560" y="0" width="1921" height="1388" key="dock-window-1/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1584959419572" />
+    <state x="2560" y="0" width="2195" height="1387" key="dock-window-1/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1592553020976" />
     <state x="291" y="0" width="1913" height="1388" key="dock-window-1/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1587462271917" />
     <state x="2775" y="-14" width="1913" height="1388" key="dock-window-2" timestamp="1587484224700">
       <screen x="2560" y="0" width="2560" height="1400" />

@@ -4,7 +4,7 @@ import time as t
 
 def disparity_map(img, fps):
     '''
-    Cálcula el mapa de disparidad de dos imágenes
+    Calculate the two-image disparity map
     '''
     ind = 0
     # t_timelose = 0

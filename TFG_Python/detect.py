@@ -20,7 +20,9 @@ flags.DEFINE_string('tfrecord', None, 'tfrecord instead of image')
 flags.DEFINE_string('output', './data/myOutput.jpg', 'path to output image')
 flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
 
-
+'''
+Detects the entities of an image and saves them in the specified directory
+'''
 def main(_argv):
     physical_devices = tf.config.list_physical_devices('GPU')
     if len(physical_devices) > 0:
@@ -71,3 +73,7 @@ if __name__ == '__main__':
         app.run(main)
     except SystemExit:
         pass
+
+'''
+Author: Zihao Zhang, https://github.com/zzh8829/yolov3-tf2
+'''

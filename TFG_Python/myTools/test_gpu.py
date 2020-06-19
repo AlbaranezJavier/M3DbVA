@@ -2,7 +2,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import tensorflow as tf
 
 '''
-Script, una forma sencilla para saber si tensorflow-gpu está bien instalado en el equipo.
+Script, a simple way to know if tensorflow-gpu is properly installed on your computer.
 '''
 if __name__ == '__main__':
     mnist = tf.keras.datasets.mnist

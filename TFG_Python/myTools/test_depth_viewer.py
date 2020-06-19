@@ -1,12 +1,11 @@
 '''
-Script, visionado de las imágenes de profundidad
+Script, viewing the depth images
 '''
 import cv2, os
 
 def print_depth(fps, path, pathOutput):
     '''
-    Pinta las imágenes que se encuentran en el directorio especificado, saltándose tantas imágenes como se haya
-    establecido en (fps)
+    Paints the images in the specified directory, skipping as many images as there are established (fps)
     '''
     ind = 0
     cv2.imshow('output', cv2.imread(f'{path}{ind}.jpg', cv2.IMREAD_COLOR))

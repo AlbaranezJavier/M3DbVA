@@ -1,6 +1,6 @@
 python 3.7
 
-cuda 10.1 - cudnn 7.6.5
+cuda 10.1 - cudnn 7.6.5 (tested series 1000 and 2000 Nvidia)
 tensorflow 2.1
 opencv-python
 absl-py

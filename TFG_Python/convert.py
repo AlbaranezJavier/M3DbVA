@@ -10,7 +10,9 @@ flags.DEFINE_string('output', './checkpoints/yolov3-320.tf', 'path to output')
 flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
 
-
+'''
+This file generates the weights used by the neural network
+'''
 def main(_argv):
     config = tf.compat.v1.ConfigProto()
     config.gpu_options.allow_growth = True
@@ -38,3 +40,7 @@ if __name__ == '__main__':
         app.run(main)
     except SystemExit:
         pass
+
+'''
+Author: Zihao Zhang, https://github.com/zzh8829/yolov3-tf2
+'''

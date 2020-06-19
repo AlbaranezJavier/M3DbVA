@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * Clase que define las propiedades del los objetos representables en el entorno 3D.
+ * Class that defines the properties of the objects that can be represented in the 3D environment.
  */
 public class Classes
 {
@@ -21,7 +21,7 @@ public class Classes
     public float GetZ(float xz)
     {
         /*
-         * Devuelve la profundidad estimada, dependiendo de si se hacerca más al ancho o al largo.
+         * Returns the estimated depth, depending on whether it is made wider or longer.
          */
         if (xz - widthx <= (longz-widthx)/2)
             return widthx;

@@ -1,12 +1,12 @@
 '''
-Complemento o plugin para establecer conexión e intercambiar mensajes de texto entre dos plataformas. Produciéndose
-esta comunicación en la misma máquina.
+Plugin to establish connection and exchange text messages between two platforms. Producing
+this communication on the same machine.
 '''
 import socket
 
 def bind2server(PORT=12345):
     '''
-    Establece una conexión con el servidor, el cual, está escuchando en el puerto 12345 de esta máquina.
+    Establishes a connection with the server, which is listening on port 12345 of this machine.
     '''
     HOST = socket.gethostname()
     HOST = socket.gethostbyname(HOST)
@@ -29,18 +29,18 @@ def print_msg(data, received):
 
 # from my_client import bind2server, send_msg, receive_msg, print_msg
 '''
-Script, prueba de comunicación.
+Script, communication test.
 '''
 if __name__ == '__main__':
-    print("Ejecutando prueba de client")
+    print("Running client test")
     mySocket = bind2server()
     try:
-        data = "hola"
+        data = "hi"
         send_msg(mySocket, data)
         serverMsg = receive_msg(mySocket)
         print_msg(data, serverMsg)
 
-        data = "adios"
+        data = "bye"
         send_msg(mySocket, data)
         serverMsg = receive_msg(mySocket)
         print_msg(data, serverMsg)

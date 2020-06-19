@@ -2,55 +2,55 @@ import numpy as np
 import cv2
 
 '''
-Herramienta destinada procesar la información de YOLO
+Tool designed to process YOLO information
 '''
 def get_objects(img, imgDepths, boxes, scores, classes, nums, class_names, maxx, maxy):
     '''
-    Devuelve la información relevante de los objetos detectados en la escena en una lista.
-    Recibe imagen rgb (img) y la imagen del mapa de profundidades (imgDepths)
-    Recibe los rectangulos que conforman y delimitan a cada objeto (boxes)
-    Recibe la certeza de que ese objeto sea de la clase predicha (scores)
-    Recibe las clases predichas (int classes)
-    Recibe el número de objetos detectados (nums)
-    Recibe el nombre de las clases posibles (class_names)
-    Recibe la resolución en x(maxx) y en y (maxy)
-    Devuelve una lista de objetos, donde cada objeto = [clase, px, py, wx, hy, distancia media, puntos del patrón,
-        límite superior izquierda del rectángulo, límite inferior derecha del rectángulo, rotación]
+    It returns the relevant information of the objects detected at the scene in a list.
+    Receives rgb image (img) and depth map image (imgDepths)
+    It receives the rectangles that form and delimit each object (boxes)
+    You receive the certainty that that object is of the predicted class (scores)
+    Receive the predicted classes (int classes)
+    Receives the number of detected objects (nums)
+    It receives the name of the possible classes (class_names)
+    Receives the resolution in x(maxx) and y (maxy)
+    Returns a list of objects, where each object = [class, px, py, wx, hy, average distance, points of the pattern,
+        upper left limit of the rectangle, lower right limit of the rectangle, rotation]
     '''
-    # Datos obtenidos por Yolo
+    # Data obtained by Yolo
     boxes, objectness, classes, nums = boxes[0], scores[0], classes[0], nums[0]
     wh = np.flip(img.shape[0:2])
     listObjects = []
     for i in range(nums):
-        # Delimitación del objeto en un rectángulo
+        # Delimitation of the object in a rectangle
         x1y1 = tuple((np.array(boxes[i][0:2]) * wh).astype(np.int32))
         x2y2 = tuple((np.array(boxes[i][2:4]) * wh).astype(np.int32))
         img = cv2.rectangle(img, x1y1, x2y2, (255, 0, 0), 2)
 
-        # Centro del objeto y su ancho
+        # Center of the object and its width
         centerx = (x1y1[0] + x2y2[0]) // 2
         centery = (x1y1[1] + x2y2[1]) // 2
         wx = x2y2[0] - x1y1[0]
         hy = x2y2[1] - x1y1[1]
 
-        # Patrones de profundidad
+        # Depth patterns
         classname = class_names[int(classes[i])].replace(" ", "_")
         patternDepths, meanDepth = get_pattern_depth(imgDepths, centerx, centery, wx, hy, maxx, maxy, classname)
 
-        # Sistema de referencia modificado al centro de la imagen (posición de la cámara)
+        # Modified reference system to the center of the image (camera position)
         centerx -= wh[0] // 2
         centery -= wh[1] // 2
 
-        # Agrega el objeto detectado a la lista de objetos
+        # Adds the detected object to the object list
         listObjects.append([classname, centerx, centery, wx, hy, meanDepth, patternDepths, x1y1, x2y2, 0])
     return listObjects
 
 '''
-Herramientas empleadas en tratar la profundidad de los puntos relevantes en los objetos detectados.
+Tools used to treat the depth of the relevant points in the detected objects.
 '''
 def get_pattern_depth(depths, centerx, centery, wx, hy, maxx, maxy, classname):
     '''
-    Devuelve la profundidad media de los patrones y una lista con las profundidades de cada patrón.
+    Returns the average depth of the patterns and a list of the depths of each pattern.
     '''
     depth = []
     dotPatternList = calculate_by_class(centerx, centery, maxx, maxy, wx, hy, classname)
@@ -66,7 +66,7 @@ def get_pattern_depth(depths, centerx, centery, wx, hy, maxx, maxy, classname):
 
 def calculate_by_class(centerx, centery, maxx, maxy, wx, hy, classname):
     '''
-    Ejecuta un patrón dependiendo de la clase a la que permanezca.
+    Execute a pattern depending on the class you stay in.
     '''
     if classname == 'person':
         return person_pattern(centerx, centery, maxx, maxy, wx, hy)
@@ -76,7 +76,7 @@ def calculate_by_class(centerx, centery, maxx, maxy, wx, hy, classname):
         return default_pattern(centerx, centery, maxx, maxy, wx, hy)
 
 '''
-Patrones de puntos que se usarán para ubicar al objeto de la clase detectada.
+Point patterns that will be used to locate the object of the detected class.
 '''
 def person_pattern(centerx, centery, maxx, maxy, wx, hy):
     desx = wx * 0.1

@@ -11,13 +11,13 @@ from myTools.my_client import bind2server
 import time as t
 
 '''
-Detect video wo gl r
-wo = sin
+Detect video wo gl r, fixes the jump of images and does not apply the rotations to the entities.
+wo = whitout
 gl = game loop
 r = rotación
 '''
 
-# Parámetros
+# Parameters
 flags.DEFINE_string('classes', './data/coco.names', 'path to classes file')
 flags.DEFINE_string('weights', './checkpoints/yolov3-320.tf',
                     'path to weights file')
@@ -31,12 +31,12 @@ flags.DEFINE_integer('x_resolution', 1280, 'image resolution x')
 flags.DEFINE_integer('y_resolution', 720, 'image resolution y')
 
 def main(_argv):
-    # Preparación de la gpu para su uso
+    # Preparing the gpu for use
     physical_devices = tf.config.list_physical_devices('GPU')
     if len(physical_devices) > 0:
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-    # Elección del modelo NN usado por Yolo. Carga de pesos y clases empleadas.
+    # Choice of model, NN, used by Yolo. Load of weights and classes used.
     if FLAGS.tiny:
         yolo = YoloV3Tiny(classes=FLAGS.num_classes)
     else:
@@ -48,27 +48,27 @@ def main(_argv):
     class_names = [c.strip() for c in open(FLAGS.classes).readlines()]
     logging.info('classes loaded')
 
-    # Se establece enlace con el servidor
+    # Link is established with the server
     mySocket = bind2server()
 
-    # Procesado de imagenes
+    # Image processing
     try:
         ind = 0
         t_timelose = 0
         while os.path.exists(f'{FLAGS.image}/RGB/{ind}.jpg'):
             time_step = t.time()
-            # Preparación de las imagenes a procesar
+            #  Preparation of the images to be processed
             img_raw = tf.image.decode_image(open(f'{FLAGS.image}/RGB/{ind}.jpg', 'rb').read(), channels=3)
             img = tf.expand_dims(img_raw, 0)
             img = transform_images(img, FLAGS.size)
             imgDepths = cv2.imread(f'{FLAGS.image}/depths/{ind}.jpg')
 
             t1 = time.time()
-            # Resultados de yolo para la imagen procesada
+            # Yolo results for the processed image
             boxes, scores, classes, nums = yolo(img)
             img = cv2.cvtColor(img_raw.numpy(), cv2.COLOR_RGB2BGR)
 
-            # Procesado de la información
+            # Information processing
             listObjects = yoloT.get_objects(img, imgDepths, boxes, scores, classes, nums, class_names,
                                             FLAGS.x_resolution, FLAGS.y_resolution)
             if len(listObjects) > 0:
@@ -78,15 +78,15 @@ def main(_argv):
             t2 = time.time()
             logging.info('time: {}'.format(t2 - t1))
 
-            # Envío del mensaje
+            # Sending the message
             mySocket.sendall(msg.encode())
 
-            # Pintado de la imagen procesada por yolo
+            # Painting of the image processed by yolo
             cv2.imshow('output', img)
             if cv2.waitKey(1) == ord('q'):
                 break
 
-            # Espera el mensaje del servidor, para procesar la siguiente imagen
+            # Wait for the message from the server, to process the following image
             mySocket.recv(1024)
 
             ind += FLAGS.frames

@@ -9,7 +9,7 @@ using System.Threading;
 internal class Server : MonoBehaviour
 {
     /*
-     * Clase encargada de gestionar las comunicaciones con otros entornos
+     * Class in charge of managing communications with other environments
      */
     private static int _port = 12345;
     public int port = 12345;
@@ -34,7 +34,7 @@ internal class Server : MonoBehaviour
     public static void BuildServer()
     {
         /*
-         * Levanta el servidor en un puerto específico de esta máquina
+         * Pick up the server on a specific port on this machine
          */
         IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
         IPAddress ipAddr = IPAddress.Parse(_ip_address);
@@ -57,7 +57,7 @@ internal class Server : MonoBehaviour
     private static void ReceiveMsg(string data, byte[] bytes, int numByte, Socket clientSocket)
     {
         /*
-         * Gestiona el mensaje recibido desde el cliente
+         * Manages the message received from the client
          */
         data += Encoding.ASCII.GetString(bytes, 0, numByte);
         if (debugging) { print("Text received -> " + data); }
@@ -72,7 +72,7 @@ internal class Server : MonoBehaviour
     private static void SendMsg(Socket clientSocket)
     {
         /*
-         * Devuelve un mensaje de control al cliente
+         * Returns a control message to the customer
          */
         if (!isShutdown)
         {
@@ -84,7 +84,7 @@ internal class Server : MonoBehaviour
     private static void Shutdown(Socket clientSocket)
     {
         /*
-         * Controla que el cierre de comunicaciones con el cliente
+         * Controls that the closing of communications with the client
          */
         isShutdown = true;
         clientSocket.Shutdown(SocketShutdown.Both);
@@ -93,7 +93,7 @@ internal class Server : MonoBehaviour
 
 
     /*
-     * Hilo encargado de gestionar las comunicaciones con el cliente de forma independiente
+     * Thread to manage communications with the client independently
      */
     private void StartServer()
     {
