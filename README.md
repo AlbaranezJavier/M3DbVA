@@ -68,8 +68,8 @@ Tabla de rendimiento de los algoritmos empleados (medidas en segundos).
  - Tensorflow 2.1
 
 ## :bookmark_tabs:Guides
- - [Generic use of the communication system](docs/Guia_del_sistema_de_comunicacion.md)
- - [Generation of environments](docs/Guia_para_la_generacion_de_entornos.md)
+ - [Generic use of the communication system](docs/Communication_System_Guide.md)
+ - [Generation of environments](docs/Environment_generation_guide.md)
 
 ## :raised_hands:References
  - [Implementation of YoloV3 with TensorFlow 2, author Zihao Zhang (zzh8829)](https://github.com/zzh8829/yolov3-tf2)
