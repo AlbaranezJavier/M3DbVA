@@ -74,8 +74,8 @@ public class Factory : ServerUser
                     // Extract client information
                     pw = float.Parse(obj_params[3], ci);
                     ph = float.Parse(obj_params[4], ci);
-                    px = float.Parse(obj_params[1], ci);
-                    py = float.Parse(obj_params[2], ci);
+                    px = float.Parse(obj_params[1], ci) - parameters.resolution[0] / 2;
+                    py = float.Parse(obj_params[2], ci) - parameters.resolution[1] / 2;
                     depth = float.Parse(obj_params[5], ci);
                     rot = float.Parse(obj_params[6], ci);
 

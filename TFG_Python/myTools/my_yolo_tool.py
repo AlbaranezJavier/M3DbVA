@@ -37,10 +37,6 @@ def get_objects(img, imgDepths, boxes, scores, classes, nums, class_names, maxx,
         classname = class_names[int(classes[i])].replace(" ", "_")
         patternDepths, meanDepth = get_pattern_depth(imgDepths, centerx, centery, wx, hy, maxx, maxy, classname)
 
-        # Modified reference system to the center of the image (camera position)
-        centerx -= wh[0] // 2
-        centery -= wh[1] // 2
-
         # Adds the detected object to the object list
         listObjects.append([classname, centerx, centery, wx, hy, meanDepth, patternDepths, x1y1, x2y2, 0])
     return listObjects

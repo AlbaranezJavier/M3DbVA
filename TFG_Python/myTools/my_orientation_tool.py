@@ -40,16 +40,15 @@ def car_orientation(x1, centery, wx, hy, numPoints, imgDepths, img):
     depths correspond to the z axis in a 3D system.
     '''
     half = numPoints//2
-    _centery = centery + len(imgDepths) // 2
     patternX = []
     patternY = []
-    desCentery = int(hy * 0.2 + _centery)
+    desCentery = int(hy * 0.2 + centery)
     step = wx / (numPoints//2+1)
     x = x1 + step
     for _ in range(half):
         patternX.append([int(x)])
-        patternY.append(255 - imgDepths[_centery, int(x)][0])
-        img = cv2.circle(img, (int(x), _centery), 2, (0, 255, 0))
+        patternY.append(255 - imgDepths[centery, int(x)][0])
+        img = cv2.circle(img, (int(x), centery), 2, (0, 255, 0))
         x += step
     x = x1 + step * 1.5
     for _ in range(half, numPoints):
