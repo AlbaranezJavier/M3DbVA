@@ -1,5 +1,5 @@
 # [<img src="https://static.dwcdn.net/css/flag-icons/flags/4x3/es.svg" alt="es" height="30" align="right"/>](docs/ReadmeSpanish.md)
-# 3D Modeling based on Artificial Vision
+# 3D Modeling based on Computer Vision
 A tool designed to generate simplified 3D environments from images, with real-time processing and maintaining the most widespread environments in the fields of artificial intelligence and 3D graphics generation. It also provides the necessary complements to establish a generic communication between Python and Unity.
 
 <p align="center">
